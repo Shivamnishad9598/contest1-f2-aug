@@ -7,19 +7,28 @@ let arr = [
 // Don't worry about consoling these functions, they are already being called on the button clicks.
 // Please don't change anything in the index.html file.
 
-function PrintDeveloper() {
+function PrintDeveloper(employees) {
   //Write your code here , just console.log
+  for(let employee of employees){
+    if(employee.profession === "developer") {
+      console.log(employee);
+    }
+  }
 }
 
-function addData() {
+function addEmployee(employees, newEmployee) {
   //Write your code here, just console.log
+  employees.push(newEmployee);
 }
 
 function removeAdmin() {
+
   //Write your code here, just console.log
+   return employees.filter(employee => employee.profession !== "admin");
 }
 
-function concatenateArray() {
+function concatenateArray(arr1 , arr2) {
+  return arr1.concat(arr2);
   //Write your code here, just console.log
 }
 
